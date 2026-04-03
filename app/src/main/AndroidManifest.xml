@@ -12,10 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KissanConnect">
         <activity
-            android:name=".Farmer_Portfolio"
+            android:name=".Consumers_Details"
             android:exported="false" />
         <activity
-            android:name=".Consumers_Details"
+            android:name=".Farmer_Portfolio"
             android:exported="false" />
         <activity
             android:name=".Farmers_Details"

@@ -41,9 +41,10 @@
             app:startIconTint="#5C6059">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="        Name"
+                android:hint="Name"
                 android:paddingStart="12dp" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -60,9 +61,10 @@
             app:startIconTint="#5C6059">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtMobile"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="        Mobile Number"
+                android:hint="Mobile Number"
                 android:inputType="phone"
                 android:paddingStart="12dp" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -81,9 +83,10 @@
             app:startIconTint="#5C6059">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="        Password"
+                android:hint="Password"
                 android:inputType="textPassword"
                 android:paddingStart="12dp" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -101,9 +104,10 @@
             app:startIconTint="#5C6059">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtCity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="        City"
+                android:hint="City"
                 android:paddingStart="12dp" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -120,9 +124,10 @@
             app:startIconTint="#5C6059">
 
             <AutoCompleteTextView
+                android:id="@+id/productAutoComplete"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="        Preferred Products"
+                android:hint="Preferred Products"
                 android:inputType="none"
                 android:paddingStart="12dp" />
         </com.google.android.material.textfield.TextInputLayout>
