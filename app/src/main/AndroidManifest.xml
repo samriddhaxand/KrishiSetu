@@ -12,9 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KissanConnect">
         <activity
-            android:name=".farmers_login"
-            android:exported="false" />
-        <activity
             android:name=".ChooseYourType"
             android:exported="false" />
         <activity
