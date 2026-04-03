@@ -35,24 +35,44 @@ public class Farmers_Details extends AppCompatActivity {
 
         // 3. Handle Save and Next
         btnSave.setOnClickListener(v -> {
-            // Collect data
-            String name = edtName.getText().toString();
-            String mobile = edtMobile.getText().toString();
-            String password = edtPassword.getText().toString();
-            String city = edtCity.getText().toString();
-            String product = productDropdown.getText().toString();
+            // 1. Collect data and trim spaces
+            String name = edtName.getText().toString().trim();
+            String mobile = edtMobile.getText().toString().trim();
+            String password = edtPassword.getText().toString().trim();
+            String city = edtCity.getText().toString().trim();
+            String product = productDropdown.getText().toString().trim();
 
-            // Create Intent to open Portfolio
-            Intent intent = new Intent(Farmers_Details.this, Farmer_Portfolio.class);
+            // 2. Validation Check
+            if (name.isEmpty()) {
+                edtName.setError("Name is required");
+                edtName.requestFocus();
+            } else if (mobile.isEmpty()) {
+                edtMobile.setError("Mobile number is required");
+                edtMobile.requestFocus();
+            } else if (mobile.length() < 10) {
+                edtMobile.setError("Enter a valid 10-digit number");
+                edtMobile.requestFocus();
+            } else if (password.isEmpty()) {
+                edtPassword.setError("Password is required");
+                edtPassword.requestFocus();
+            } else if (city.isEmpty()) {
+                edtCity.setError("City is required");
+                edtCity.requestFocus();
+            } else if (product.isEmpty()) {
+                productDropdown.setError("Please select a product category");
+                productDropdown.requestFocus();
+            } else {
+                // 3. All fields are filled! Proceed to next activity
+                Intent intent = new Intent(Farmers_Details.this, Farmer_Portfolio.class);
 
-            // Pass data to the next activity
-            intent.putExtra("u_name", name);
-            intent.putExtra("u_mobile", mobile);
-            intent.putExtra("u_pass", password);
-            intent.putExtra("u_city", city);
-            intent.putExtra("u_product", product);
+                intent.putExtra("u_name", name);
+                intent.putExtra("u_mobile", mobile);
+                intent.putExtra("u_pass", password);
+                intent.putExtra("u_city", city);
+                intent.putExtra("u_product", product);
 
-            startActivity(intent);
+                startActivity(intent);
+            }
         });
     }
 }
