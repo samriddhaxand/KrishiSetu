@@ -84,7 +84,7 @@ public class Consumers_orders extends AppCompatActivity {
         // Note: false for Tomatoes/Apples, true for Wheat to match your image exactly
         list.add(new Order_for_consumer("4 Apr 2026", "DELIVERED", R.drawable.tomatoes, "Fresh Tomatoes", "Ramesh Kumar", "5 per kg", "₹225", false));
         list.add(new Order_for_consumer("4 Apr 2026", "CONFIRMED", R.drawable.wheat, "Wheat", "Sunita Devi", "10 per kg", "₹280", true));
-        list.add(new Order_for_consumer("4 Apr 2026", "IN PROGRESS", R.drawable.grapes, "Apples", "Gopal Singh", "3 per kg", "₹190", false));
+        list.add(new Order_for_consumer("4 Apr 2026", "IN PROGRESS", R.drawable.grapes, "Grapes", "Gopal Singh", "3 per kg", "₹190", false));
         return list;
     }
 }

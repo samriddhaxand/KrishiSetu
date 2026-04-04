@@ -54,7 +54,7 @@ public class Consumers_Home_Screen extends AppCompatActivity {
                 // Already on this page
                 return true;
             } else if (itemId == R.id.nav_longterm) {
-                Intent intent = new Intent(this, LongtermActivity.class);
+                Intent intent = new Intent(Consumers_Home_Screen.this, LongtermActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
                 startActivity(intent);
                 return true;

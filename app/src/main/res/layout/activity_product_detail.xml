@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9F5">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="320dp">
+                <ImageView
+                    android:id="@+id/detailImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/tomatoes" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gradient_overlay" />
+                <ImageButton
+                    android:id="@+id/btnBack"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/circle_white_bg"
+                    android:src="@drawable/ic_back"
+                    app:tint="#1A2E24" />
+                <TextView
+                    android:id="@+id/detailName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="55dp"
+                    android:text="Cauliflower"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/detailLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/detailName"
+                    android:layout_alignStart="@id/detailName"
+                    android:layout_marginTop="-50dp"
+                    android:text="📍 Ramesh Kumar - Nashik, Maharashtra"
+                    android:textColor="#E0E2DB"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <include android:id="@+id/cardPrice" layout="@layout/item_stat_card" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <include android:id="@+id/cardStock" layout="@layout/item_stat_card" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <include android:id="@+id/cardDiscount" layout="@layout/item_stat_card" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:strokeColor="#E0E2DB"
+                app:strokeWidth="1dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Crop Stage" android:textStyle="bold" android:textColor="#757575" android:textSize="12sp"/>
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sowing "
+                        app:chipBackgroundColor="#F1F3EE"
+                        app:chipStrokeWidth="0dp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:strokeColor="#E0E2DB"
+                app:strokeWidth="1dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Fertilizers Used" android:textStyle="bold" android:textColor="#1A2E24" android:textSize="16sp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4 fertilizers applied" android:textColor="#757575" android:textSize="12sp" android:layout_marginBottom="12dp"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="• Borax (prevents hollow stem)" android:background="@drawable/bullet_green_bg" android:padding="12dp" android:layout_marginTop="4dp" android:textColor="#1A2E24"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="• Calcium Ammonium Nitrate" android:background="@drawable/bullet_green_bg" android:padding="12dp" android:layout_marginTop="8dp" android:textColor="#1A2E24"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="• SSP - Single Super Phosphate" android:background="@drawable/bullet_green_bg" android:padding="12dp" android:layout_marginTop="8dp" android:textColor="#1A2E24"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="• Neem Cake" android:background="@drawable/bullet_green_bg" android:padding="12dp" android:layout_marginTop="8dp" android:textColor="#1A2E24"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:strokeColor="#E0E2DB"
+                app:strokeWidth="1dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Chemicals Applied" android:textStyle="bold" android:textColor="#1A2E24" android:textSize="16sp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3 chemicals used" android:textColor="#757575" android:textSize="12sp" android:layout_marginBottom="12dp"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="• Spinosad (diamondback moth)" android:background="@drawable/bullet_orange_bg" android:padding="12dp" android:layout_marginTop="4dp" android:textColor="#1A2E24"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="• Copper Oxychloride (bacterial rot)" android:background="@drawable/bullet_orange_bg" android:padding="12dp" android:layout_marginTop="8dp" android:textColor="#1A2E24"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="• Lambda-Cyhalothrin (aphids)" android:background="@drawable/bullet_orange_bg" android:padding="12dp" android:layout_marginTop="8dp" android:textColor="#1A2E24"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="24dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:strokeColor="#E0E2DB"
+                app:strokeWidth="1dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Crop Photos" android:textStyle="bold" android:textSize="16sp" android:textColor="#1A2E24"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3 photos from farm" android:textColor="#757575" android:textSize="12sp" android:layout_marginBottom="12dp"/>
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:src="@drawable/farm"
+                        android:scaleType="centerCrop"
+                        app:shapeAppearanceOverlay="@style/Rounded16"
+                        android:layout_marginBottom="12dp"/>
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:src="@drawable/farm2"
+                        android:scaleType="centerCrop"
+                        app:shapeAppearanceOverlay="@style/Rounded16"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/nav_bottom_container"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

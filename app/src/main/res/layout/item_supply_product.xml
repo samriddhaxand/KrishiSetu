@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_marginBottom="16dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="#FFFFFF"
+    app:strokeColor="#E0E2DB"
+    app:strokeWidth="1dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/imgCard"
+            android:layout_width="88dp"
+            android:layout_height="match_parent"
+            android:layout_margin="12dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="#EFEBE9">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imgProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/tomatoes"
+                    android:scaleType="centerCrop"
+                    app:shapeAppearanceOverlay="@style/SupplyRowImageCorners" />
+
+                <TextView
+                    android:id="@+id/tvDiscount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10% OFF"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10sp"
+                    android:background="#EF6C00"
+                    android:gravity="center"
+                    android:paddingVertical="3dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"/>
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imgCard"
+            android:layout_toStartOf="@+id/addBtnContainer"
+            android:layout_marginVertical="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvProductName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fresh Tomatoes"
+                android:textColor="#1A2E24"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvFarmer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="👤 Ramesh Kumar"
+                android:textColor="#9E9E9E"
+                android:textSize="12sp"
+                android:layout_marginTop="2dp"/>
+
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹45 / per kg"
+                android:textColor="#2E7D32"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/addBtnContainer"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center">
+
+            <View android:layout_width="1dp" android:layout_height="match_parent" android:background="#E0E2DB" android:layout_alignParentStart="true" android:layout_marginVertical="24dp"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/btnAdd"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="41dp"
+                android:layout_marginBottom="43dp"
+                android:background="#2E7D32"
+                android:padding="8dp"
+                android:src="@drawable/add"
+                app:shapeAppearanceOverlay="@style/Circular"
+                app:tint="#FFFFFF" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>
