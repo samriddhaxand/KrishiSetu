@@ -51,15 +51,15 @@ public class Schemes_screen extends AppCompatActivity {
             Intent intent = null;
 
             if (id == R.id.nav_home) {
-                intent = new Intent(this, Home_Screen.class);
+                intent = new Intent(Schemes_screen.this, Home_Screen.class);
             } else if (id == R.id.nav_orders) {
-                intent = new Intent(this, orders_screen.class);
+                intent = new Intent(Schemes_screen.this, orders_screen.class);
             } else if (id == R.id.nav_profile) {
-                intent = new Intent(this, profile_screen.class);
+                intent = new Intent(Schemes_screen.this, profile_screen.class);
             } else if (id == R.id.nav_schemes) {
                 return true; // Already here
             }else if (id == R.id.nav_profile) {
-                intent = new Intent(this, profile_screen.class);
+                intent = new Intent(Schemes_screen.this, profile_screen.class);
             }
 
             if (intent != null) {
