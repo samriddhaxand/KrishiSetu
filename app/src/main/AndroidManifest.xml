@@ -12,22 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KissanConnect">
         <activity
-            android:name=".profile_screen"
-            android:exported="false" />
-        <activity
-            android:name=".Schemes_screen"
-            android:exported="false" />
-        <activity
-            android:name=".orders_screen"
-            android:exported="false" />
-        <activity
             android:name=".Home_Screen"
             android:exported="false" />
         <activity
-            android:name=".Consumers_Details"
+            android:name=".Farmer_Portfolio"
             android:exported="false" />
         <activity
-            android:name=".Farmer_Portfolio"
+            android:name=".Consumers_Details"
             android:exported="false" />
         <activity
             android:name=".Farmers_Details"
