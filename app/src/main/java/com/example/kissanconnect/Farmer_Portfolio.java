@@ -65,11 +65,12 @@ public class Farmer_Portfolio extends AppCompatActivity {
                 Bundle bundle = getIntent().getExtras();
                 String name = (bundle != null) ? bundle.getString("u_name", "") : "";
                 String mobile = (bundle != null) ? bundle.getString("u_mobile", "") : "";
+                String city = (bundle != null) ? bundle.getString("u_city", "") : "";
 
                 boolean isOrganic = radioYes.isChecked();
 
                 // Store EVERYTHING permanently
-                saveAllData(name, mobile, exp, income, area, market, isOrganic, bio);
+                saveAllData(name, city,mobile, exp, income, area, market, isOrganic, bio);
 
                 Toast.makeText(this, "Profile Completed!", Toast.LENGTH_LONG).show();
 
@@ -82,11 +83,12 @@ public class Farmer_Portfolio extends AppCompatActivity {
         });
     }
 
-    private void saveAllData(String name, String phone, String exp, String income, String area, String mkt, boolean org, String bio) {
+    private void saveAllData(String name, String city,String phone, String exp, String income, String area, String mkt, boolean org, String bio) {
         SharedPreferences pref = getSharedPreferences("FarmerProfile", MODE_PRIVATE);
         SharedPreferences.Editor editor = pref.edit();
 
         editor.putString("full_name", name);
+        editor.putString("city", city);
         editor.putString("phone_number", phone);
         editor.putString("experience", exp);
         editor.putString("annual_income", income);

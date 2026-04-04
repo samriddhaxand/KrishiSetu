@@ -8,133 +8,184 @@
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="70dp"> <LinearLayout
-        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_marginBottom="70dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#2E7D32"
-            android:orientation="vertical"
-            android:padding="20dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="GOOD MORNING"
-                android:textColor="#BDBDBD"
-                android:textSize="12sp"
-                android:letterSpacing="0.1" />
-
-            <TextView
-                android:id="@+id/tvHomeUserName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Ramesh Kumar"
-                android:textColor="#FFFFFF"
-                android:textSize="22sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/tvHomeUserLocation"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Nashik, Maharashtra"
-                android:textColor="#E0E0E0"
-                android:textSize="14sp" />
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/stats_card"
-                android:padding="15dp"
-                android:weightSum="3">
+                android:background="#2E7D32"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="0.1"
+                    android:text="GOOD MORNING"
+                    android:textColor="#BDBDBD"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvHomeUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ramesh Kumar"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvHomeUserLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nashik, Maharashtra"
+                    android:textColor="#E0E0E0"
+                    android:textSize="14sp" />
 
                 <LinearLayout
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:orientation="vertical">
-                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="6" android:textColor="#FFFFFF" android:textStyle="bold" android:textSize="18sp"/>
-                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Total Crops" android:textColor="#E0E0E0" android:textSize="10sp"/>
-                </LinearLayout>
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/stats_card"
+                    android:padding="15dp"
+                    android:weightSum="3">
 
-                <View android:layout_width="1dp" android:layout_height="30dp" android:background="#4DFFFFFF" android:layout_gravity="center"/>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:orientation="vertical">
-                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3" android:textColor="#FFFFFF" android:textStyle="bold" android:textSize="18sp"/>
-                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pending Orders" android:textColor="#E0E0E0" android:textSize="10sp"/>
-                </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="6"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
 
-                <View android:layout_width="1dp" android:layout_height="30dp" android:background="#4DFFFFFF" android:layout_gravity="center"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Crops"
+                            android:textColor="#E0E0E0"
+                            android:textSize="10sp" />
+                    </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:orientation="vertical">
-                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="₹12,400" android:textColor="#FFFFFF" android:textStyle="bold" android:textSize="18sp"/>
-                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="This Month" android:textColor="#E0E0E0" android:textSize="10sp"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:background="#4DFFFFFF" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pending Orders"
+                            android:textColor="#E0E0E0"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:background="#4DFFFFFF" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹12,400"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="This Month"
+                            android:textColor="#E0E0E0"
+                            android:textSize="10sp" />
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:padding="16dp">
 
             <LinearLayout
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical">
-                <TextView
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="My Inventory"
+                        android:textColor="#333333"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tap any crop to edit listing"
+                        android:textColor="#757575"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnAddProduct"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="My Inventory"
-                    android:textColor="#333333"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Tap any crop to edit listing"
-                    android:textSize="12sp"
-                    android:textColor="#757575"/>
+                    android:backgroundTint="#2E7D32"
+                    android:text="+ Add Crop"
+                    android:textAllCaps="false"
+                    app:cornerRadius="20dp" />
             </LinearLayout>
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnAddProduct"
-                android:layout_width="wrap_content"
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvInventory"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="+ Add Crop"
-                android:textAllCaps="false"
-                android:backgroundTint="#2E7D32"
-                app:cornerRadius="20dp" />
+                android:clipToPadding="false"
+                android:padding="8dp" />
+
         </LinearLayout>
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvInventory"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:clipToPadding="false" />
-
-    </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 
     <com.google.android.material.card.MaterialCardView
@@ -152,10 +203,9 @@
             android:layout_height="64dp"
             app:itemIconTint="@color/nav_item_selector"
             app:itemTextColor="@color/nav_item_selector"
-            app:menu="@menu/bottom_nav_menu"
             android:background="@android:color/transparent"
-            app:labelVisibilityMode="unlabeled">
-        </com.google.android.material.bottomnavigation.BottomNavigationView>
+            app:labelVisibilityMode="unlabeled"
+            app:menu="@menu/bottom_nav_menu" />
     </com.google.android.material.card.MaterialCardView>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
