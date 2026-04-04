@@ -3,6 +3,8 @@ package com.example.kissanconnect;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -14,6 +16,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.card.MaterialCardView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,6 +24,7 @@ import java.util.List;
 public class Home_Screen extends AppCompatActivity {
 
     TextView name,location;
+    Button add ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -86,5 +90,14 @@ public class Home_Screen extends AppCompatActivity {
 
             return true;
         });
+
+        Button btnAddCrop = findViewById(R.id.btnAddProduct); // Ensure this ID matches your Home XML
+
+        btnAddCrop.setOnClickListener(v -> {
+            // Create an Intent to start the AddCrop activity
+            Intent intent = new Intent(Home_Screen.this, AddCrop.class);
+            startActivity(intent);
+        });
+
     }
 }
